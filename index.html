@@ -229,6 +229,132 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/20/详解Ajax中get和post的区别/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张思轶">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="前端之路，永无止境">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/20/详解Ajax中get和post的区别/" itemprop="url">详解Ajax中get和post的区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-20T23:31:44+08:00">
+                2017-11-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="一-get与post到底是干什用的"><a href="#一-get与post到底是干什用的" class="headerlink" title="一.get与post到底是干什用的"></a>一.get与post到底是干什用的</h2><p>get与post实际<strong>本质上并没有什么区别</strong>，他们都是TCP链接，是与服务器交互的方法。都是向服务器提交数据，并且获取服务器上的数据。</p>
+<p>1.GET:把数据名称和数据值用=连接，如果多个的话，那么会把多个数据用<strong>&amp;</strong>连接，然后把数据放到<strong>url?</strong>后面传给指定的页面。</p>
+<p>2.POST：直接传送数值，但需要申明发送的数据类型。如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据。<br><img src="http://upload-images.jianshu.io/upload_images/6863830-c2c6c327a5919b37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p>
+<h2 id="二-二者的区别在哪？"><a href="#二-二者的区别在哪？" class="headerlink" title="二. 二者的区别在哪？"></a>二. 二者的区别在哪？</h2><p>1.当我们使用get时，参数会放在URL中（过于招摇），而psot则会以你看不到的一种方式进行传输（隐蔽）。这样就可以看出二者在安全性上就有区别，post相较于get更加安全。</p>
+<p>2.get是要把参数放在URL中，可是一个URL也就是我们的地址栏能装下的东西显然是不够多的。post相较于get可以请求更大的数据量。</p>
+<p>3.本意上get是像服务器发送索取请求，post则是提交数据的一种请求。</p>
+<p>4.使用get请求要注意缓存的问题。，而post则不需要考虑这么多。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/19/这只是开始，我眼中的Web前端开发/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -512,7 +638,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

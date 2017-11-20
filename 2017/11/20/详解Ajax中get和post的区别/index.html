@@ -79,17 +79,19 @@
 
 
 
-<meta name="description" content="写在前面  最初从来没有会想过自己有一天会从事一项这样的工作。在我最初的印象中，程序员这个职业并没有给我留下什么好印象（也许是身边没有接触过这类人）。大多的印象来源于网上,大家总是会拿程序员调侃，修电脑的？或者是个头发乱七八糟或是臃肿或是骨瘦如柴般的眼镜宅男。当我走进这一行的时候，起初并没有多大兴趣，觉得还行，就这样吧">
+<meta name="description" content="一.get与post到底是干什用的get与post实际本质上并没有什么区别，他们都是TCP链接，是与服务器交互的方法。都是向服务器提交数据，并且获取服务器上的数据。 1.GET:把数据名称和数据值用=连接，如果多个的话，那么会把多个数据用&amp;amp;连接，然后把数据放到url?后面传给指定的页面。 2.POST：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这只是开始，我眼中的Web前端开发">
-<meta property="og:url" content="http://yoursite.com/2017/11/19/这只是开始，我眼中的Web前端开发/index.html">
+<meta property="og:title" content="详解Ajax中get和post的区别">
+<meta property="og:url" content="http://yoursite.com/2017/11/20/详解Ajax中get和post的区别/index.html">
 <meta property="og:site_name" content="前端之路，永无止境">
-<meta property="og:description" content="写在前面  最初从来没有会想过自己有一天会从事一项这样的工作。在我最初的印象中，程序员这个职业并没有给我留下什么好印象（也许是身边没有接触过这类人）。大多的印象来源于网上,大家总是会拿程序员调侃，修电脑的？或者是个头发乱七八糟或是臃肿或是骨瘦如柴般的眼镜宅男。当我走进这一行的时候，起初并没有多大兴趣，觉得还行，就这样吧。当我越来越深入了解，身边的程序员朋友也改变了我的看法。也许我们会因为一个BUG">
+<meta property="og:description" content="一.get与post到底是干什用的get与post实际本质上并没有什么区别，他们都是TCP链接，是与服务器交互的方法。都是向服务器提交数据，并且获取服务器上的数据。 1.GET:把数据名称和数据值用=连接，如果多个的话，那么会把多个数据用&amp;amp;连接，然后把数据放到url?后面传给指定的页面。 2.POST：直接传送数值，但需要申明发送的数据类型。如果需要像 HTML 表单那样 POST 数据，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-11-19T14:15:07.644Z">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/6863830-c2c6c327a5919b37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-11-20T15:33:05.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="这只是开始，我眼中的Web前端开发">
-<meta name="twitter:description" content="写在前面  最初从来没有会想过自己有一天会从事一项这样的工作。在我最初的印象中，程序员这个职业并没有给我留下什么好印象（也许是身边没有接触过这类人）。大多的印象来源于网上,大家总是会拿程序员调侃，修电脑的？或者是个头发乱七八糟或是臃肿或是骨瘦如柴般的眼镜宅男。当我走进这一行的时候，起初并没有多大兴趣，觉得还行，就这样吧。当我越来越深入了解，身边的程序员朋友也改变了我的看法。也许我们会因为一个BUG">
+<meta name="twitter:title" content="详解Ajax中get和post的区别">
+<meta name="twitter:description" content="一.get与post到底是干什用的get与post实际本质上并没有什么区别，他们都是TCP链接，是与服务器交互的方法。都是向服务器提交数据，并且获取服务器上的数据。 1.GET:把数据名称和数据值用=连接，如果多个的话，那么会把多个数据用&amp;amp;连接，然后把数据放到url?后面传给指定的页面。 2.POST：直接传送数值，但需要申明发送的数据类型。如果需要像 HTML 表单那样 POST 数据，">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/6863830-c2c6c327a5919b37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -119,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/19/这只是开始，我眼中的Web前端开发/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/20/详解Ajax中get和post的区别/"/>
 
 
 
 
 
-  <title>这只是开始，我眼中的Web前端开发 | 前端之路，永无止境</title>
+  <title>详解Ajax中get和post的区别 | 前端之路，永无止境</title>
   
 
 
@@ -232,7 +234,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/19/这只是开始，我眼中的Web前端开发/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/20/详解Ajax中get和post的区别/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张思轶">
@@ -249,7 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">这只是开始，我眼中的Web前端开发</h1>
+          <h1 class="post-title" itemprop="name headline">详解Ajax中get和post的区别</h1>
         
 
         <div class="post-meta">
@@ -261,8 +263,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-19T21:01:33+08:00">
-                2017-11-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-20T23:31:44+08:00">
+                2017-11-20
               </time>
             
 
@@ -299,9 +301,13 @@
       
 
       
-        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>  最初从来没有会想过自己有一天会从事一项这样的工作。在我最初的印象中，程序员这个职业并没有给我留下什么好印象（也许是身边没有接触过这类人）。大多的印象来源于网上,大家总是会拿程序员调侃，修电脑的？或者是个头发乱七八糟或是臃肿或是骨瘦如柴般的眼镜宅男。当我走进这一行的时候，起初并没有多大兴趣，觉得还行，就这样吧。当我越来越深入了解，身边的程序员朋友也改变了我的看法。也许我们会因为一个BUG而整到几乎崩溃，也许我们的乐趣仅限于闲暇时刻在吸烟区抽烟吹牛，也许每天夜里的灯火通明是我们的日常。但是，在不断的深入开发的过程中，更加让我感受到通关打BOSS的小惊喜。我好像有点爱上这样的生活了（至少还有一直陪我的人）。</p>
-<h2 id="前端开发，一个人的马戏团。"><a href="#前端开发，一个人的马戏团。" class="headerlink" title="前端开发，一个人的马戏团。"></a>前端开发，一个人的马戏团。</h2><p>  一开始我就没想过能成为多厉害的工程师。但是我却不会放弃成为一个享受开发的程序员。web前端开发好像是很火热了，至少现在还是很火热的。学习前端的人越来越多，究竟怎样才能在大多数人中成为被老板挑中的那个。我没有答案，因为我也在寻找。写这个博客我也是想把自己的开发知识和听到见到的我所认为的好东西分享给自己（因为估计不会有人看我这样水的博客吧，哈哈。）。现在前端技术越来越杂，杂到就像你是一个马戏团的成员却要你表演各种马戏。如果你要有几门手艺不会，抱歉没有人会先要看你的表演。跨栈开发誓必然之势，如果你不停下来不往前走这条路，就注定着会被淘汰。前端交互框架的不断迭代更新，组件化，模块化的规范，后端移动端的必然趋势，真是让人头疼。但是我始终认为学好做好前端，你得先学会javascript。虽然现在大家都用各种框架，但是随着ES6+的不断完善，我相信在未来的几年也许就不存在必须什么框架可言，封装的功能也许就会成为js的内置方法。我学的不够好，所以我得接着学。</p>
-<h2 id="为啥想写博客"><a href="#为啥想写博客" class="headerlink" title="为啥想写博客"></a>为啥想写博客</h2><p>  为了督促我自己学习吧。说分享给大家有点过于夸大了（因为本人技术也不是什么大牛，估计没人看了）。希望自己可以坚持吧。让我把高级程序再拿出来看一看。学好每一步，让自己每一天都不要过于浪费。程序员同样可以是灵活的脑子和有趣的灵魂共存的。给自己加油吧。</p>
+        <h2 id="一-get与post到底是干什用的"><a href="#一-get与post到底是干什用的" class="headerlink" title="一.get与post到底是干什用的"></a>一.get与post到底是干什用的</h2><p>get与post实际<strong>本质上并没有什么区别</strong>，他们都是TCP链接，是与服务器交互的方法。都是向服务器提交数据，并且获取服务器上的数据。</p>
+<p>1.GET:把数据名称和数据值用=连接，如果多个的话，那么会把多个数据用<strong>&amp;</strong>连接，然后把数据放到<strong>url?</strong>后面传给指定的页面。</p>
+<p>2.POST：直接传送数值，但需要申明发送的数据类型。如果需要像 HTML 表单那样 POST 数据，请使用 setRequestHeader() 来添加 HTTP 头。然后在 send() 方法中规定您希望发送的数据。<br><img src="http://upload-images.jianshu.io/upload_images/6863830-c2c6c327a5919b37.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="1.png"></p>
+<h2 id="二-二者的区别在哪？"><a href="#二-二者的区别在哪？" class="headerlink" title="二. 二者的区别在哪？"></a>二. 二者的区别在哪？</h2><p>1.当我们使用get时，参数会放在URL中（过于招摇），而psot则会以你看不到的一种方式进行传输（隐蔽）。这样就可以看出二者在安全性上就有区别，post相较于get更加安全。</p>
+<p>2.get是要把参数放在URL中，可是一个URL也就是我们的地址栏能装下的东西显然是不够多的。post相较于get可以请求更大的数据量。</p>
+<p>3.本意上get是像服务器发送索取请求，post则是提交数据的一种请求。</p>
+<p>4.使用get请求要注意缓存的问题。，而post则不需要考虑这么多。</p>
 
       
     </div>
@@ -326,8 +332,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/19/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/11/19/这只是开始，我眼中的Web前端开发/" rel="next" title="这只是开始，我眼中的Web前端开发">
+                <i class="fa fa-chevron-left"></i> 这只是开始，我眼中的Web前端开发
               </a>
             
           </div>
@@ -335,10 +341,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/20/详解Ajax中get和post的区别/" rel="prev" title="详解Ajax中get和post的区别">
-                详解Ajax中get和post的区别 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -454,7 +456,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前端开发，一个人的马戏团。"><span class="nav-number">2.</span> <span class="nav-text">前端开发，一个人的马戏团。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为啥想写博客"><span class="nav-number">3.</span> <span class="nav-text">为啥想写博客</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-get与post到底是干什用的"><span class="nav-number">1.</span> <span class="nav-text">一.get与post到底是干什用的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-二者的区别在哪？"><span class="nav-number">2.</span> <span class="nav-text">二. 二者的区别在哪？</span></a></li></ol></div>
             
 
           </div>
